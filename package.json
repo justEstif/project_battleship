@@ -1,0 +1,27 @@
+{
+  "name": "project_battleship",
+  "description": "Implementing TDD in the classic game Battleship",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build src --emptyOutDir",
+    "preview": "vite preview",
+    "test": "jest",
+    "watch": "jest --watch --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justEstif/project_battleship.git"
+  },
+  "devDependencies": {
+    "vite": "^2.9.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justEstif/project_battleship/issues"
+  },
+  "homepage": "https://github.com/justEstif/project_battleship#readme"
+}

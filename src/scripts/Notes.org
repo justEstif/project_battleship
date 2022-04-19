@@ -1,0 +1,8 @@
+#+title: Project: Battleship
+
+* Notes from Assignment Page
+- This assignment will be using TDD and since this is your first experience with it, it could become overwhelming.
+  - take your time, one step at a time
+  - write a test, then make it pass
+- Do your best to isolate every bit of application functionality from actual DOM manipulation bits
+  - try your best to keep those things outside of the app logic

@@ -1,0 +1,9 @@
+* Project battleship
+
+** Aim
+- This is the final project in the Testing JavaScript section of The Odin Project.
+- The aim of this project to practice TDD, modular design patterns and pure function usage in JavaScript.
+** Setup
+ - Vite: build tool
+ - Jest: testing suite
+ - HTML, CSS, JS
