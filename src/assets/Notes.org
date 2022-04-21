@@ -1,0 +1,182 @@
+#+title: Project: Battleship
+#+startup: overview
+
+* Notes from Assignment Page
+- This assignment will be using TDD and since this is your first experience with it, it could become overwhelming.
+  - take your time, one step at a time
+  - write a test, then make it pass
+- Do your best to isolate every bit of application functionality from actual DOM manipulation bits
+  - try your best to keep those things outside of the app logic
+*** TODO Ship factory function
+- ship will be objects that include their length, where they've been hit and whether or not they've been sunk
+- you only have to test your object's public interface
+  - only methods or properties that are used outside of your 'ship' object need unit tests
+- ships should have a hit() function that takes a number and then marks that position as hit
+- isSunk() should be a function that calculates it based on their length and whether all of their positions are 'hit'
+*** TODO Gameboard factory
+*** TODO Player
+*** TODO domModule
+* How to play battleship?
+** Intro
+- played on ruled grids (paper or board) on which each player's fleet of warships are marked
+- the fleets are concealed from the other player
+- players alternate turns calling "shots" at the other player's ships
+** Description
+- the game is played on four grids, 2 for each player
+  - usually 10 x 10 grid, each individual squares in the grid are identified by letter and number
+- on one grid the player arranges ships and record the shots by the opponent(ocean grid), on the other grid, the player records their own shots(tracking or target grid)
+- before play begins, each player secretly arranges their ships on their ocean grid.
+  - each ship occupies a certain number of consecutive squares on the grid, either horizontal or vertical, no diagonally or overlaping allowed
+  - the types and number of ships allowed for each player are equal
+- after the ships have been positioned the game proceeds in a series of rounds
+  - in each round, each player takes a turn to announce a target square in the opponent's grid which is to be shot at
+  - the opponent announces whether or not the square is occupied by a ship.
+    - if it is a hit: the player who is hit marks this on their own ocean grid. The attacking player marks the hit or miss on their own tracking grid
+      - if all the squares of the ship have been hit, the ship's owner announces the sinking of the ship
+      - if all of a player's ships have been sunk, the game is over and their opponent wins
+      - if all ships of both players are sunk by the end of the round, the game is a draw
+
+- 5 ships each player
+- 10 x 10 grid - 2 grid for each player
+* Ships factory
+#+begin_example
+let ship1 = {
+   length: 4,
+   hit(num){
+        // marks the postion as hit
+        count++
+   }
+   isSunk(){
+        if(hit.count >= lenth) ship = sunk
+   }
+}
+#+end_example
+
+
+#+title: Project: Battleship
+#+startup: overview
+
+* Notes from Assignment Page
+- This assignment will be using TDD and since this is your first experience with it, it could become overwhelming.
+  - take your time, one step at a time
+  - write a test, then make it pass
+- Do your best to isolate every bit of application functionality from actual DOM manipulation bits
+  - try your best to keep those things outside of the app logic
+*** TODO Ship factory function
+- ship will be objects that include their length, where they've been hit and whether or not they've been sunk
+- you only have to test your object's public interface
+  - only methods or properties that are used outside of your 'ship' object need unit tests
+- ships should have a hit() function that takes a number and then marks that position as hit
+- isSunk() should be a function that calculates it based on their length and whether all of their positions are 'hit'
+*** TODO Gameboard factory
+*** TODO Player
+*** TODO domModule
+* How to play battleship?
+** Intro
+- played on ruled grids (paper or board) on which each player's fleet of warships are marked
+- the fleets are concealed from the other player
+- players alternate turns calling "shots" at the other player's ships
+** Description
+- the game is played on four grids, 2 for each player
+  - usually 10 x 10 grid, each individual squares in the grid are identified by letter and number
+- on one grid the player arranges ships and record the shots by the opponent(ocean grid), on the other grid, the player records their own shots(tracking or target grid)
+- before play begins, each player secretly arranges their ships on their ocean grid.
+  - each ship occupies a certain number of consecutive squares on the grid, either horizontal or vertical, no diagonally or overlaping allowed
+  - the types and number of ships allowed for each player are equal
+- after the ships have been positioned the game proceeds in a series of rounds
+  - in each round, each player takes a turn to announce a target square in the opponent's grid which is to be shot at
+  - the opponent announces whether or not the square is occupied by a ship.
+    - if it is a hit: the player who is hit marks this on their own ocean grid. The attacking player marks the hit or miss on their own tracking grid
+      - if all the squares of the ship have been hit, the ship's owner announces the sinking of the ship
+      - if all of a player's ships have been sunk, the game is over and their opponent wins
+      - if all ships of both players are sunk by the end of the round, the game is a draw
+
+- 5 ships each player
+- 10 x 10 grid - 2 grid for each player
+* Ships factory
+#+begin_example
+let ship1 = {
+   length: 4,
+   hit(num){
+        // marks the postion as hit
+        count++
+   }
+   isSunk(){
+        if(hit.count >= lenth) ship = sunk
+   }
+}
+#+end_example
+
+
+* Project planning
+1. Researching
+   1. what will I be building?
+      - I will be building the battleship board game using TDD principles.
+      - I will need some way to create a grid, someway to identify the a specific grid box
+      - I will have be sure about the design patterns
+      - I have to think more functional programming and how to use pure functions more as I want to do this with less more and less mutabile
+        - also because I will only be working about the DOM interaction later
+   2. resources:
+      - although I could look at other people's code, i will be making the project from skratch
+      - I will be using other resources in design patterns topics, pure functions and functional programming and probably how to make grids
+   3. solutions
+      - since TOP has already provided criterias and certain objects and properties, I will start from that and create the battleship game
+      - I might look back on my etch-a-sketch project to see how I made the grid
+   4. Results of my research on how to play battleship
+      - requirements
+        - two players
+          - each given equal number and type of ships (usually 5)
+        - two grid boards for each player
+          - one board for arranging ships and recording the shots by the opponent /ocean grid/
+          - one board for record the shots this player has fired /tracking grid/
+          - each individual squares in the grid are identified by letter and number
+      - rules
+        - ships can only be placed horizontal or vertical, no diagonal or overlapping allowed
+        - if all the squares of the ship have been hit, the ship's owner announces the sinking of the ship
+        - if all of a player's ships have been sunk, the game is over and their opponent wins
+        - if all ships of both players are sunk by the end of the round, the game is a draw
+      - gameplay
+        1. each player secretly arranges their ships on their ocean grid
+        2. the game proceeds in a series of rounds: in each round, each player takes a turn to announce a target square in the opponent's grid which is to be shot at
+        3. the opponent announces whether or not the square is occupied by a ship.
+           - if it is a hit: the player who is hit marks this on their own ocean grid.
+           - the attacking player marks the hit or miss on their own tracking grid
+        4. round continues until game ends by victory or draw
+2. Planning
+   1. outline
+      1. when the page is loaded, two grid are shown both have 5 ships of random size put on them
+         - the player has the option to change the coordinates of the ships on their grid to other legal spots
+           - there would be some kind of object or array that has all the legal coordinates and all of its elements would have the drag and drop function
+           - the array would have to be refreshed when the ships are moved however
+      2. when the start button is clicked, the 2nd grid hides, and the computer's choices are hidden
+         - the start button also triggers the create random grid function for the computer
+      3. when the game  begins the players ships opacity change to indicate that they can't be interacted with anymore
+      4. the player starts by clicking on the other players grid
+         - it would become red if it is the coordinate of a ship or black if empty
+      5. the computer would continue to the next round
+         - if the computer gets the right ship, it would aim to get something that is horizontal or vertical to it
+      6. the game would continue until either the player loses, wins or draws, all of which would be detected by the js
+      7. when the game ends, it would have a game end screen for a few seconds and exit, waiting for the next play action
+   2. one pager
+    #+begin_comment
+    Project: Battleship
+
+    I will be create the classic board game Battleship. I will be making it very similarly to the linked website in the Odin project page.
+
+    When the page loads, the player would see two boards. One would indicate that it is the players and the other would say computer. As by the rules, the player would see 5 ships that have been randomly placed across their board. They have the option to move the pieces around if they so wish. They don't have access to the computer grid. The play button would start the game. When it is clicked, it would randomize the coordinates of the ship.
+
+    When they begin the game, the ship coordinates would become static and the pc grid would be hidden and its ships would be randomly placed. The player now sees two boards. They would no longer be able to interact with their own ships. The other grid would be empty, until they click on some square. If the square was the coordinate of a ship, the square would turn red else it would change to black.
+
+    The turn would pass to the computer who would randomly pick a coordinate on the player side. The turn is then passed to the player and so on until one of the end options happens. In which case, the winner or draw would be announced. There would then be the option to restart game.
+
+    If the player decides to start a new game, the start game button would take them to the first screen. The start new game and start game do different things.
+    #+end_comment
+
+
+
+
+
+** Queue
+- [X] research how to play battleship
+- [ ] top notes in modeling section
+- [ ]

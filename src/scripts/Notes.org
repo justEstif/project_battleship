@@ -1,4 +1,5 @@
 #+title: Project: Battleship
+#+startup: overview
 
 * Notes from Assignment Page
 - This assignment will be using TDD and since this is your first experience with it, it could become overwhelming.
@@ -6,3 +7,47 @@
   - write a test, then make it pass
 - Do your best to isolate every bit of application functionality from actual DOM manipulation bits
   - try your best to keep those things outside of the app logic
+*** TODO Ship factory function
+- ship will be objects that include their length, where they've been hit and whether or not they've been sunk
+- you only have to test your object's public interface
+  - only methods or properties that are used outside of your 'ship' object need unit tests
+- ships should have a hit() function that takes a number and then marks that position as hit
+- isSunk() should be a function that calculates it based on their length and whether all of their positions are 'hit'
+*** TODO Gameboard factory
+*** TODO Player
+*** TODO domModule
+* How to play battleship?
+** Intro
+- played on ruled grids (paper or board) on which each player's fleet of warships are marked
+- the fleets are concealed from the other player
+- players alternate turns calling "shots" at the other player's ships
+** Description
+- the game is played on four grids, 2 for each player
+  - usually 10 x 10 grid, each individual squares in the grid are identified by letter and number
+- on one grid the player arranges ships and record the shots by the opponent(ocean grid), on the other grid, the player records their own shots(tracking or target grid)
+- before play begins, each player secretly arranges their ships on their ocean grid.
+  - each ship occupies a certain number of consecutive squares on the grid, either horizontal or vertical, no diagonally or overlaping allowed
+  - the types and number of ships allowed for each player are equal
+- after the ships have been positioned the game proceeds in a series of rounds
+  - in each round, each player takes a turn to announce a target square in the opponent's grid which is to be shot at
+  - the opponent announces whether or not the square is occupied by a ship.
+    - if it is a hit: the player who is hit marks this on their own ocean grid. The attacking player marks the hit or miss on their own tracking grid
+      - if all the squares of the ship have been hit, the ship's owner announces the sinking of the ship
+      - if all of a player's ships have been sunk, the game is over and their opponent wins
+      - if all ships of both players are sunk by the end of the round, the game is a draw
+
+- 5 ships each player
+- 10 x 10 grid - 2 grid for each player
+* Ships factory
+#+begin_example
+let ship1 = {
+   length: 4,
+   hit(num){
+        // marks the postion as hit
+        count++
+   }
+   isSunk(){
+        if(hit.count >= lenth) ship = sunk
+   }
+}
+#+end_example
