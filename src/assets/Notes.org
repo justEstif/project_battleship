@@ -215,16 +215,20 @@ let ship1 = {
     - sunk
       - boolean
       - updates to true if all the squaresOfShip are hit
-      - squaresOfShip
-        - array
-        - all the Squares that the Ship is on
-        - used to check if Ship has been hit and if sunk
+    - squaresOfShip
+      - array
+      - all the Squares that the Ship is on
+      - used to check if Ship has been hit and if sunk
   - Functions
-    - /markSquareHit(square)/
+    - markSquareHit(square)
       - marks the Square as hit
+      - runs isShipSunk()
     - isShipSunk()
       - boolean
-      - if all the Squares in the squaresofShip have been hit
+      - if all the Squares in the squaresofShip have been hit, changes the sunk to true
+    - addNewSquares([square * length])
+      - clear squaresOfShip
+      - adds the squares into the squareOfShip
 - Gameboard
   - Properties
     - squares
