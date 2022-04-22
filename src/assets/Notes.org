@@ -1,6 +1,10 @@
 #+title: Project: Battleship
 #+startup: overview
 
+** Queue
+- [X] research how to play battleship
+- [ ] top notes in modeling section
+- [ ]
 * Notes from Assignment Page
 - This assignment will be using TDD and since this is your first experience with it, it could become overwhelming.
   - take your time, one step at a time
@@ -171,10 +175,13 @@ let ship1 = {
 
     If the player decides to start a new game, the start game button would take them to the first screen. The start new game and start game do different things.
     #+end_comment
+   3. modeling objects
 
 
 
 
+
+* Pseudocode
 
 ** Queue
 - [X] research how to play battleship

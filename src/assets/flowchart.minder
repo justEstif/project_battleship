@@ -1,357 +1,920 @@
 <?xml version="1.0"?>
 <minder>
-  <theme name="Default" index="42"/>
+  <theme name="Default" index="1"/>
   <styles>
-    <style level="0" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="1" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="2" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="3" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="4" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="5" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="6" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="7" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="8" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="9" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-    <style level="10" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="0" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="1" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="2" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="3" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="4" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="5" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="6" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="7" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="8" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="9" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
+    <style level="10" isset="true" linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false" connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
   </styles>
-  <drawarea x="-455.6147668867327" y="-645.24129688052017" scale="1"/>
+  <drawarea x="87.148525498576703" y="-5255.9051634982643" scale="0.75"/>
   <images/>
   <nodes>
-    <node id="29" posx="141.5814087774495" posy="1726.6993365615945" maxwidth="200" width="154" height="42" side="top" fold="false" treesize="865.00000000000011" layout="To right">
-      <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-      <nodename>Project Battleship</nodename>
+    <node id="1" posx="631.77083333333383" posy="453.42960611979191" maxwidth="200" width="153" height="40" side="left" fold="false" treesize="400.99999999999989" layout="To left">
+      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+      <nodename>Project BattleShip</nodename>
       <nodenote></nodenote>
       <nodes>
-        <node id="11" posx="395.58140877745018" posy="1579.6993365615949" maxwidth="200" width="203" height="42" side="right" fold="false" treesize="42" color="#7a36b1" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>DOM interaction module</nodename>
-          <nodenote></nodenote>
-          <nodes>
-            <node id="26" posx="698.58140877745041" posy="1579.6993365615949" maxwidth="200" width="126" height="42" side="right" fold="false" treesize="42" color="#7a36b1" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>user interface</nodename>
-              <nodenote></nodenote>
-            </node>
-          </nodes>
-        </node>
-        <node id="0" posx="395.58140877745018" posy="1747.699336561594" maxwidth="200" width="165" height="42" side="right" fold="false" treesize="294" color="#715344" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="5" nodepadding="7" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>main game module</nodename>
-          <nodenote></nodenote>
-          <nodes>
-            <node id="8" posx="660.58140877745029" posy="1621.6993365615949" maxwidth="200" width="70" height="42" side="right" fold="false" treesize="42" color="#715344" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>Player</nodename>
-              <nodenote></nodenote>
-            </node>
-            <node id="3" posx="660.58140877745029" posy="1747.699336561594" maxwidth="200" width="55" height="42" side="right" fold="false" treesize="210" color="#715344" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>Ship</nodename>
-              <nodenote></nodenote>
-              <nodes>
-                <node id="15" posx="815.58140877745052" posy="1663.6993365615949" maxwidth="200" width="70" height="42" side="right" fold="false" treesize="42" color="#715344" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>length</nodename>
-                  <nodenote></nodenote>
-                </node>
-                <node id="17" posx="815.58140877745052" posy="1705.6993365615945" maxwidth="200" width="43" height="42" side="right" fold="false" treesize="42" color="#715344" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>hit</nodename>
-                  <nodenote></nodenote>
-                </node>
-                <node id="19" posx="815.58140877745052" posy="1747.699336561594" maxwidth="200" width="58" height="42" side="right" fold="false" treesize="42" color="#715344" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>sunk</nodename>
-                  <nodenote></nodenote>
-                </node>
-                <node id="20" posx="815.58140877745052" posy="1789.699336561594" maxwidth="200" width="55" height="42" side="right" fold="false" treesize="42" color="#715344" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>hit()</nodename>
-                  <nodenote></nodenote>
-                </node>
-                <node id="21" posx="815.58140877745052" posy="1831.699336561594" maxwidth="200" width="83" height="42" side="right" fold="true" treesize="42" color="#715344" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>isSunk()</nodename>
-                  <nodenote></nodenote>
-                </node>
-              </nodes>
-            </node>
-            <node id="7" posx="660.58140877745029" posy="1873.699336561594" maxwidth="200" width="109" height="42" side="right" fold="false" treesize="42" color="#715344" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>Gameboard</nodename>
-              <nodenote></nodenote>
-              <nodes>
-                <node id="22" posx="869.58140877745063" posy="1873.699336561594" maxwidth="200" width="137" height="42" side="right" fold="false" treesize="42" color="#715344" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>receiveAttack()</nodename>
-                  <nodenote></nodenote>
-                </node>
-              </nodes>
-            </node>
-          </nodes>
-        </node>
-      </nodes>
-    </node>
-    <node id="43" posx="127.91393025716093" posy="-115.2218088437869" maxwidth="200" width="76" height="42" side="left" fold="false" treesize="840" layout="To right">
-      <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-      <nodename>factory</nodename>
-      <nodenote></nodenote>
-      <nodes>
-        <node id="30" posx="303.91393025716155" posy="-376.2218088437869" maxwidth="200" width="55" height="42" side="right" fold="false" treesize="318" color="#68b723" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+        <node id="3" posx="478.77083333333348" posy="92.429606119792027" maxwidth="200" width="53" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
           <nodename>Ship</nodename>
           <nodenote></nodenote>
           <nodes>
-            <node id="31" posx="458.91393025716161" posy="-454.2218088437869" maxwidth="200" width="99" height="42" side="right" fold="false" treesize="162" color="#68b723" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>properties</nodename>
+            <node id="5" posx="249.77083333333371" posy="14.429606119792027" maxwidth="200" width="129" height="40" side="left" fold="true" treesize="116" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>length:number</nodename>
               <nodenote></nodenote>
               <nodes>
-                <node id="33" posx="657.91393025716172" posy="-514.22180884378656" maxwidth="200" width="80" height="42" side="right" fold="false" treesize="42" color="#68b723" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>length: </nodename>
+                <node id="7" posx="-63.229166666666686" posy="-23.570393880207973" maxwidth="200" width="213" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>can be used when making the coordinates</nodename>
                   <nodenote></nodenote>
                 </node>
-                <node id="35" posx="657.91393025716172" posy="-472.22180884378668" maxwidth="200" width="218" height="60" side="right" fold="false" treesize="60" color="#68b723" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>hit: where they have been hit</nodename>
-                  <nodenote></nodenote>
-                </node>
-                <node id="37" posx="657.91393025716172" posy="-412.2218088437869" maxwidth="200" width="177" height="60" side="right" fold="false" treesize="60" color="#68b723" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>sunk: whether or not they've been sunk</nodename>
+                <node id="9" posx="-53.229166666666686" posy="34.429606119792027" maxwidth="200" width="203" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+                  <nodename>during the making of the gameBoard</nodename>
                   <nodenote></nodenote>
                 </node>
               </nodes>
             </node>
-            <node id="39" posx="458.91393025716161" posy="-295.2218088437869" maxwidth="200" width="88" height="42" side="right" fold="false" treesize="156" color="#68b723" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>methods</nodename>
+            <node id="11" posx="254.77083333333371" posy="121.42960611979203" maxwidth="200" width="124" height="40" side="left" fold="true" treesize="98" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>sunk: boolean</nodename>
               <nodenote></nodenote>
               <nodes>
-                <node id="40" posx="646.91393025716172" posy="-352.2218088437869" maxwidth="200" width="166" height="60" side="right" fold="false" treesize="60" color="#68b723" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>hit(number): marks position as hit</nodename>
+                <node id="13" posx="-36.229166666666686" posy="92.429606119792027" maxwidth="200" width="191" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>whether or not they've been sunk</nodename>
                   <nodenote></nodenote>
                 </node>
-                <node id="41" posx="646.91393025716172" posy="-292.2218088437869" maxwidth="200" width="215" height="96" side="right" fold="false" treesize="96" color="#68b723" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>isSunk(): calculates whether all of their positions are hit based on their length</nodename>
+                <node id="15" posx="24.770833333333314" posy="150.42960611979203" maxwidth="200" width="130" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>default is false</nodename>
                   <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="17" posx="200.77083333333326" posy="199.42960611979203" maxwidth="200" width="178" height="40" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>?coordinateOfShip: []</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="19" posx="-111.22916666666674" posy="190.42960611979203" maxwidth="200" width="212" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>?an array of all the coordinates the ship is on</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="21" posx="-373.22916666666674" posy="190.42960611979203" maxwidth="200" width="162" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>{coordinates:(5,6), hit:false}</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
                 </node>
               </nodes>
             </node>
           </nodes>
         </node>
-        <node id="57" posx="303.91393025716155" posy="-157.22180884378668" maxwidth="200" width="70" height="42" side="right" fold="false" treesize="120" color="#333333" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+        <node id="27" posx="463.77083333333394" posy="132.42960611979203" maxwidth="200" width="68" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
           <nodename>Player</nodename>
           <nodenote></nodenote>
           <nodes>
-            <node id="59" posx="473.9139302571615" posy="-196.2218088437869" maxwidth="200" width="224" height="42" side="right" fold="false" treesize="42" color="#333333" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>take turn playing the game</nodename>
+            <node id="29" posx="243.77083333333371" posy="-12.570393880207973" maxwidth="200" width="120" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>turn: boolean</nodename>
               <nodenote></nodenote>
             </node>
-            <node id="61" posx="473.9139302571615" posy="-154.2218088437869" maxwidth="200" width="219" height="78" side="right" fold="false" treesize="78" color="#333333" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>the computer players are capable of making random plays, no AI</nodename>
+            <node id="31" posx="223.77083333333326" posy="36.429606119792027" maxwidth="200" width="140" height="40" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>ComputerPlayer</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="33" posx="-6.2291666666666856" posy="36.429606119792027" maxwidth="200" width="130" height="40" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>randomMove()</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="35" posx="-276.22916666666674" posy="27.429606119792027" maxwidth="200" width="170" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>returns random legalMoves element</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="43" posx="143.77083333333326" posy="181.42960611979203" maxwidth="200" width="220" height="40" side="left" fold="true" treesize="232" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>fleet:[{sunk, ships:[{}, {}]</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="45" posx="-178.22916666666674" posy="85.429606119792027" maxwidth="200" width="222" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>all the ships the player has</nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="47" posx="-73.229166666666686" posy="163.42960611979203" maxwidth="200" width="117" height="40" side="left" fold="true" treesize="116" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>createFleet()</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="49" posx="-392.22916666666674" posy="163.42960611979203" maxwidth="200" width="219" height="40" side="left" fold="true" treesize="116" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>create a ship using factory</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="51" posx="-640.22916666666674" posy="125.42960611979203" maxwidth="200" width="148" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>?add to the coordinateOfShip</nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="53" posx="-687.22916666666674" posy="183.42960611979203" maxwidth="200" width="195" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>?maybe class has a set coordinates function</nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="55" posx="-101.22916666666674" posy="259.42960611979203" maxwidth="200" width="145" height="40" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>getLegalMoves()</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="57" posx="-388.22916666666674" posy="250.42960611979203" maxwidth="200" width="187" height="58" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>calculates all the legal moves of the player</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="59" posx="-689.22916666666674" posy="250.42960611979203" maxwidth="200" width="201" height="58" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>returns array of player's legal moves</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="61" posx="-1006.2291666666665" posy="241.42960611979203" maxwidth="200" width="217" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>calculated of the coordinates of the ships in the fleet </nodename>
+                              <nodenote></nodenote>
+                            </node>
+                          </nodes>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node id="107" posx="458.77083333333394" posy="172.42960611979203" maxwidth="200" width="73" height="40" side="left" fold="true" treesize="40" color="#7a36b1" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+          <nodename>Square</nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="109" posx="202.77083333333371" posy="132.42960611979203" maxwidth="200" width="156" height="40" side="left" fold="true" treesize="40" color="#7a36b1" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+              <nodename>createSquares()</nodename>
+              <nodenote>function createSquares(coordinate){
+  this.coordinate = coordinate
+  this.hit= false
+  this.ship = false
+}
+</nodenote>
+              <nodes>
+                <node id="111" posx="-110.2291666666664" posy="123.42960611979203" maxwidth="200" width="213" height="58" side="left" fold="true" treesize="58" color="#7a36b1" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+                  <nodename>creates all the squares as coordinate objects</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="113" posx="-379.2291666666664" posy="123.42960611979203" maxwidth="200" width="169" height="58" side="left" fold="true" treesize="58" color="#7a36b1" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+                      <nodename>push to the squares property</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="115" posx="201.77083333333394" posy="172.42960611979203" maxwidth="200" width="157" height="40" side="left" fold="true" treesize="40" color="#7a36b1" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+              <nodename>updateSquareHit()</nodename>
+              <nodenote></nodenote>
+            </node>
+            <node id="117" posx="191.77083333333394" posy="212.42960611979203" maxwidth="200" width="167" height="40" side="left" fold="true" treesize="40" color="#7a36b1" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+              <nodename>updateSquareShip()</nodename>
               <nodenote></nodenote>
             </node>
           </nodes>
         </node>
-        <node id="45" posx="303.91393025716155" posy="103.77819115621344" maxwidth="200" width="110" height="42" side="right" fold="false" treesize="402" color="#3689e6" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+        <node id="119" posx="423.77083333333394" posy="212.42960611979203" maxwidth="200" width="108" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
           <nodename>GameBoard</nodename>
           <nodenote></nodenote>
           <nodes>
-            <node id="50" posx="513.91393025716161" posy="-76.221808843786903" maxwidth="200" width="193" height="96" side="right" fold="false" treesize="96" color="#3689e6" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>able to place ships at specific coordinates by calling the ship factory function</nodename>
-              <nodenote></nodenote>
-            </node>
-            <node id="52" posx="513.91393025716161" posy="19.778191156213552" maxwidth="200" width="218" height="168" side="right" fold="false" treesize="168" color="#3689e6" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>receiveAttack(c1, c2): 2 coordinates, determines whether or not the ship attack hit a shp and then sends the "hit" function to the correct ship, or records the coordinates of the missed shot</nodename>
-              <nodenote></nodenote>
-            </node>
-            <node id="54" posx="513.91393025716161" posy="187.77819115621332" maxwidth="200" width="185" height="60" side="right" fold="false" treesize="60" color="#3689e6" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>keeps track of missed attacks</nodename>
-              <nodenote></nodenote>
-            </node>
-            <node id="55" posx="513.91393025716161" posy="247.77819115621321" maxwidth="200" width="212" height="78" side="right" fold="false" treesize="78" color="#3689e6" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>able to report whether or not all of their ships have been sunk</nodename>
-              <nodenote></nodenote>
-            </node>
-          </nodes>
-        </node>
-      </nodes>
-    </node>
-    <node id="62" posx="127.91393025716093" posy="710.27819115621378" maxwidth="200" width="55" height="42" side="left" fold="false" treesize="611.00000000000045" layout="To right">
-      <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-      <nodename>Ship</nodename>
-      <nodenote></nodenote>
-      <nodes>
-        <node id="63" posx="282.91393025716155" posy="434.77819115621378" maxwidth="200" width="70" height="42" side="right" fold="false" treesize="60" color="#f37329" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>length</nodename>
-          <nodenote></nodenote>
-          <nodes>
-            <node id="81" posx="452.91393025716161" posy="425.77819115621332" maxwidth="200" width="215" height="60" side="right" fold="false" treesize="60" color="#f37329" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>can be used when making the coordinates</nodename>
-              <nodenote></nodenote>
-            </node>
-          </nodes>
-        </node>
-        <node id="65" posx="282.91393025716155" posy="545.77819115621378" maxwidth="200" width="126" height="42" side="right" fold="false" treesize="162" color="#68b723" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>sunk: boolean</nodename>
-          <nodenote></nodenote>
-          <nodes>
-            <node id="95" posx="508.91393025716161" posy="485.77819115621378" maxwidth="200" width="193" height="60" side="right" fold="false" treesize="60" color="#68b723" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>whether or not they've been sunk</nodename>
-              <nodenote></nodenote>
-            </node>
-            <node id="64" posx="508.91393025716161" posy="575.77819115621378" maxwidth="200" width="165" height="42" side="right" fold="false" treesize="102" color="#68b723" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>hit: ?array || object</nodename>
+            <node id="121" posx="231.77083333333417" posy="114.42960611979203" maxwidth="200" width="92" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+              <nodename>squares[]</nodename>
               <nodenote></nodenote>
               <nodes>
-                <node id="94" posx="773.91393025716172" posy="545.77819115621378" maxwidth="200" width="213" height="42" side="right" fold="false" treesize="42" color="#68b723" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>where they have been hit</nodename>
+                <node id="123" posx="-72.229166666666686" posy="96.429606119792027" maxwidth="200" width="204" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+                  <nodename>where all the squares on the gameboard will be stored</nodename>
                   <nodenote></nodenote>
                 </node>
-                <node id="96" posx="773.91393025716172" posy="587.77819115621378" maxwidth="200" width="205" height="60" side="right" fold="false" treesize="60" color="#68b723" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>?we push the coordinate here</nodename>
+              </nodes>
+            </node>
+            <node id="127" posx="179.77083333333326" posy="154.42960611979203" maxwidth="200" width="144" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>notShipAttacks[]</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="129" posx="-120.22916666666674" posy="136.42960611979203" maxwidth="200" width="200" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+                  <nodename>is square is got attackd, but is not a ship, add it here</nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="135" posx="160.77083333333326" posy="194.42960611979203" maxwidth="200" width="163" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>receiveAttack(x, y)</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="137" posx="-154.22916666666674" posy="185.42960611979203" maxwidth="200" width="215" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>checks if coordinates hit a ship or not</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="139" posx="-476.22916666666669" posy="138.42960611979203" maxwidth="200" width="222" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>if ship: send the 'hit' function to the correct ship</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                    <node id="141" posx="-457.22916666666669" posy="196.42960611979203" maxwidth="200" width="203" height="94" side="left" fold="true" treesize="94" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>else: records the missed shot, by pushing the coordinates into the notshipsCoordinates</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="143" posx="224.77083333333417" posy="234.42960611979203" maxwidth="200" width="99" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>passTurn()</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="145" posx="-90.229166666666742" posy="225.42960611979203" maxwidth="200" width="215" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>changes the turn property of the Players</nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="147" posx="125.77083333333348" posy="274.42960611979203" maxwidth="200" width="198" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+              <nodename>if isShip is true on the square, prevent moving on that spot</nodename>
+              <nodenote></nodenote>
+            </node>
+          </nodes>
+        </node>
+        <node id="149" posx="416.77083333333394" posy="252.42960611979203" maxwidth="200" width="115" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+          <nodename>another idea</nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="151" posx="168.77083333333326" posy="252.42960611979203" maxwidth="200" width="148" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+              <nodename>new organization</nodename>
+              <nodenote></nodenote>
+            </node>
+          </nodes>
+        </node>
+        <node id="153" posx="473.77083333333348" posy="292.42960611979203" maxwidth="200" width="58" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename>DOM</nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="155" posx="249.77083333333371" posy="272.42960611979203" maxwidth="200" width="124" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>user interface</nodename>
+              <nodenote></nodenote>
+            </node>
+            <node id="157" posx="217.77083333333417" posy="312.42960611979203" maxwidth="200" width="156" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>upto you they say</nodename>
+              <nodenote></nodenote>
+            </node>
+          </nodes>
+        </node>
+        <node id="159" posx="430.77083333333394" posy="332.42960611979203" maxwidth="200" width="101" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename>Game Play</nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="161" posx="206.77083333333394" posy="292.42960611979203" maxwidth="200" width="124" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>At game start</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="163" posx="-37.229166666666686" posy="292.42960611979203" maxwidth="200" width="144" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>Create 2 Players</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="165" posx="-324.22916666666652" posy="283.42960611979203" maxwidth="200" width="187" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>Create GameBoard for each player</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="167" posx="-638.22916666666652" posy="283.42960611979203" maxwidth="200" width="214" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>createCoordinateObject(): for each square</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="169" posx="-954.22916666666652" posy="283.42960611979203" maxwidth="200" width="216" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>Create 5 Ships of the same type for each player</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="171" posx="-1274.229166666667" posy="283.42960611979203" maxwidth="200" width="220" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>place the Ships randomly on the Player's gameboard</nodename>
+                                  <nodenote></nodenote>
+                                  <nodes>
+                                    <node id="173" posx="-1566.2291666666674" posy="283.42960611979203" maxwidth="200" width="192" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                      <nodename>setShipCoordinate()=&gt; shipCoordinate []</nodename>
+                                      <nodenote></nodenote>
+                                      <nodes>
+                                        <node id="175" posx="-1849.2291666666674" posy="283.42960611979203" maxwidth="200" width="183" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                          <nodename>push them to Player's fleet property</nodename>
+                                          <nodenote></nodenote>
+                                          <nodes>
+                                            <node id="177" posx="-2116.2291666666674" posy="283.42960611979203" maxwidth="200" width="167" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                              <nodename>getLegalMoves() -&gt; legalMoves[]</nodename>
+                                              <nodenote></nodenote>
+                                              <nodes>
+                                                <node id="179" posx="-2326.2291666666665" posy="292.42960611979203" maxwidth="200" width="110" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                                  <nodename>button start</nodename>
+                                                  <nodenote></nodenote>
+                                                  <nodes>
+                                                    <node id="181" posx="-2642.2291666666656" posy="283.42960611979203" maxwidth="200" width="216" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                                                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                                      <nodename>randomizeShipCoordinates() of the computer player</nodename>
+                                                      <nodenote></nodenote>
+                                                      <nodes>
+                                                        <node id="183" posx="-2948.2291666666647" posy="283.42960611979203" maxwidth="200" width="206" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                                                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                                          <nodename>set human player turn to true and begin game</nodename>
+                                                          <nodenote></nodenote>
+                                                        </node>
+                                                      </nodes>
+                                                    </node>
+                                                  </nodes>
+                                                </node>
+                                              </nodes>
+                                            </node>
+                                          </nodes>
+                                        </node>
+                                      </nodes>
+                                    </node>
+                                  </nodes>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="185" posx="260.77083333333371" posy="332.42960611979203" maxwidth="200" width="70" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>During</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="187" posx="-32.229166666666686" posy="323.42960611979203" maxwidth="200" width="193" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>player clicks on coordinate of opponent</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="189" posx="-353.22916666666652" posy="332.42960611979203" maxwidth="200" width="221" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>receiveAttack(coordinates)</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="191" posx="-519.22916666666652" posy="312.42960611979203" maxwidth="200" width="66" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>if ship</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="193" posx="-836.22916666666652" posy="303.42960611979203" maxwidth="200" width="217" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>pass the coordinate to the Ship function hit()</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="195" posx="-1047.2291666666665" posy="312.42960611979203" maxwidth="200" width="111" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>isFleetDown</nodename>
+                                  <nodenote></nodenote>
+                                  <nodes>
+                                    <node id="197" posx="-1292.229166666667" posy="292.42960611979203" maxwidth="200" width="145" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                      <nodename>if yes, end game</nodename>
+                                      <nodenote></nodenote>
+                                    </node>
+                                    <node id="199" posx="-1342.229166666667" posy="332.42960611979203" maxwidth="200" width="195" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                      <nodename>keep turn and try again</nodename>
+                                      <nodenote></nodenote>
+                                    </node>
+                                  </nodes>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                        <node id="201" posx="-513.22916666666652" posy="352.42960611979203" maxwidth="200" width="60" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>if not</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="203" posx="-798.22916666666652" posy="343.42960611979203" maxwidth="200" width="185" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>push to notShipsCoordinates[]</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="205" posx="-997.22916666666652" posy="352.42960611979203" maxwidth="200" width="99" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>passTurn()</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="207" posx="281.77083333333326" posy="372.42960611979203" maxwidth="200" width="49" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>End</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="209" posx="39.770833333333314" posy="372.42960611979203" maxwidth="200" width="142" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>clear everything</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="233" posx="-253.22916666666671" posy="363.42960611979203" maxwidth="200" width="193" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>if player attacks empty spot</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="235" posx="-546.22916666666663" posy="372.42960611979203" maxwidth="200" width="193" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>coordinates grayed out</nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node id="211" posx="456.77083333333394" posy="372.42960611979203" maxwidth="200" width="75" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename>Outline</nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="213" posx="236.77083333333417" posy="312.42960611979203" maxwidth="200" width="120" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>On page load</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="215" posx="46.770833333333314" posy="312.42960611979203" maxwidth="200" width="90" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>2 Players</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="217" posx="-212.2291666666666" posy="292.42960611979203" maxwidth="200" width="159" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>1 gameboard each</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                    <node id="219" posx="-167.22916666666663" posy="332.42960611979203" maxwidth="200" width="114" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>5 ships each</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="221" posx="230.77083333333417" posy="352.42960611979203" maxwidth="200" width="126" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>on game start</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="223" posx="-29.229166666666686" posy="343.42960611979203" maxwidth="200" width="160" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>ships become non-interactive</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="225" posx="-321.22916666666652" posy="334.42960611979203" maxwidth="200" width="192" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>?change in opacity and removing  aclass or something</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="227" posx="242.77083333333417" posy="392.42960611979203" maxwidth="200" width="114" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>during game</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="229" posx="-33.229166666666686" posy="343.42960611979203" maxwidth="200" width="176" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>if player attacks ship</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="231" posx="-305.22916666666652" posy="343.42960611979203" maxwidth="200" width="172" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>coordinates turn red</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="237" posx="-16.229166666666686" posy="383.42960611979203" maxwidth="200" width="159" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>if player sinks ship</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="239" posx="-201.2291666666666" posy="383.42960611979203" maxwidth="200" width="85" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>solid red</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="241" posx="-42.229166666666686" posy="423.42960611979203" maxwidth="200" width="185" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>create coordinates for each grid</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="243" posx="-217.2291666666666" posy="430.42960611979203" maxwidth="200" width="75" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>Outline</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="245" posx="-437.22916666666652" posy="370.42960611979203" maxwidth="200" width="120" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>On page load</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="247" posx="-627.22916666666652" posy="370.42960611979203" maxwidth="200" width="90" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>2 Players</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="249" posx="-886.22916666666663" posy="350.42960611979203" maxwidth="200" width="159" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>1 gameboard each</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                                <node id="251" posx="-841.22916666666652" posy="390.42960611979203" maxwidth="200" width="114" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>5 ships each</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                        <node id="253" posx="-443.22916666666652" posy="410.42960611979203" maxwidth="200" width="126" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>on game start</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="255" posx="-703.22916666666652" posy="401.42960611979203" maxwidth="200" width="160" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>ships become non-interactive</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="257" posx="-995.22916666666652" posy="392.42960611979203" maxwidth="200" width="192" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>?change in opacity and removing  aclass or something</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                        <node id="259" posx="-431.22916666666652" posy="450.42960611979203" maxwidth="200" width="114" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>during game</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="261" posx="-707.22916666666652" posy="372.42960611979203" maxwidth="200" width="176" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>if player attacks ship</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="263" posx="-979.22916666666652" posy="372.42960611979203" maxwidth="200" width="172" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>coordinates turn red</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                            <node id="265" posx="-724.22916666666652" posy="412.42960611979203" maxwidth="200" width="193" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>if player attacks empty spot</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="267" posx="-1017.2291666666667" posy="421.42960611979203" maxwidth="200" width="193" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>coordinates grayed out</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                            <node id="269" posx="-690.22916666666652" posy="470.42960611979203" maxwidth="200" width="159" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>if player sinks ship</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="271" posx="-875.22916666666663" posy="470.42960611979203" maxwidth="200" width="85" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>solid red</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                            <node id="273" posx="-716.22916666666652" posy="510.42960611979208" maxwidth="200" width="185" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>create coordinates for each grid</nodename>
+                              <nodenote></nodenote>
+                            </node>
+                          </nodes>
+                        </node>
+                        <node id="275" posx="-412.22916666666652" posy="490.42960611979208" maxwidth="200" width="95" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>game end</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="277" posx="-664.22916666666652" posy="490.42960611979208" maxwidth="200" width="152" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>announce winner </nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="279" posx="-894.22916666666663" posy="470.42960611979203" maxwidth="200" width="130" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>text at bottom</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                                <node id="281" posx="-874.22916666666652" posy="510.42960611979208" maxwidth="200" width="110" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>start button</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="63" posx="-317.22916666666674" posy="470.42960611979203" maxwidth="200" width="175" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>isShipSunk():boolean</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="65" posx="-630.22916666666674" posy="452.42960611979203" maxwidth="200" width="213" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>if all the coordinateOfShip hit = true, make Ship.sunk = true</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="67" posx="-933.22916666666674" posy="452.42960611979203" maxwidth="200" width="203" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>?check if all the coordinates hit is true of the ships</nodename>
+                              <nodenote></nodenote>
+                            </node>
+                          </nodes>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="289" posx="261.77083333333371" posy="432.42960611979203" maxwidth="200" width="95" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>game end</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="291" posx="9.7708333333333144" posy="403.42960611979203" maxwidth="200" width="152" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>announce winner </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="293" posx="-220.2291666666666" posy="403.42960611979203" maxwidth="200" width="130" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>text at bottom</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="283" posx="-26.229166666666345" posy="443.42960611979203" maxwidth="200" width="188" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>array of coordinates is passed in</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="285" posx="-342.2291666666664" posy="405.42960611979203" maxwidth="200" width="216" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>empty the coordinateOfShip and sets it to the new one</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                    <node id="287" posx="-335.2291666666664" posy="481.42960611979208" maxwidth="200" width="209" height="58" side="left" fold="true" treesize="57.999999999999886" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>updates the players legal moves</nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node id="297" posx="461.77083333333394" posy="412.42960611979203" maxwidth="200" width="70" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename>Queue</nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="299" posx="199.77083333333394" posy="372.42960611979203" maxwidth="200" width="162" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>about ship position</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="301" posx="-109.22916666666674" posy="325.42960611979203" maxwidth="200" width="209" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>how does the gameboard changes the position of the ship?</nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="303" posx="-354.22916666666652" posy="343.42960611979203" maxwidth="200" width="145" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                      <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename>Main Game Loop</nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="305" posx="-556.22916666666663" posy="314.42960611979203" maxwidth="200" width="102" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>New Game</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="307" posx="-784.22916666666652" posy="274.42960611979203" maxwidth="200" width="128" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>create players</nodename>
+                              <nodenote></nodenote>
+                            </node>
+                            <node id="309" posx="-821.22916666666652" posy="314.42960611979203" maxwidth="200" width="165" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>create gameboards</nodename>
+                              <nodenote></nodenote>
+                            </node>
+                            <node id="311" posx="-760.22916666666652" posy="354.42960611979203" maxwidth="200" width="104" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>place ships</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="313" posx="-985.22916666666652" posy="314.42960611979203" maxwidth="200" width="125" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>drag and drop</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                                <node id="315" posx="-938.22916666666652" posy="354.42960611979203" maxwidth="200" width="78" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>random</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                                <node id="317" posx="-986.22916666666652" posy="394.42960611979203" maxwidth="200" width="126" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>type in values</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                        <node id="319" posx="-657.22916666666652" posy="354.42960611979203" maxwidth="200" width="203" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                          <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename>ends once one players ships have all been sunk</nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="321" posx="-835.22916666666652" posy="334.42960611979203" maxwidth="200" width="78" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>or draw</nodename>
+                              <nodenote></nodenote>
+                            </node>
+                            <node id="323" posx="-963.22916666666652" posy="374.42960611979203" maxwidth="200" width="206" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename>should only use methods from other objects</nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="325" posx="-1250.229166666667" posy="356.42960611979203" maxwidth="200" width="187" height="94" side="left" fold="true" treesize="94" color="#68b723" layout="To left">
+                                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename>if you create a new function, make sure it goes inside the proper class or module</nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="327" posx="-73.229166666666686" posy="401.42960611979203" maxwidth="200" width="173" height="58" side="left" fold="true" treesize="58" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>how do we know the position of the ship?</nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="329" posx="309.77083333333394" posy="412.42960611979203" maxwidth="200" width="52" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>turn</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="331" posx="21.770833333333314" posy="374.42960611979203" maxwidth="200" width="188" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>?setShipCoordinate([])</nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="333" posx="5.7708333333333144" posy="414.42960611979203" maxwidth="200" width="204" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>how do we pass the turn from one player to the next</nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="335" posx="221.77083333333417" posy="452.42960611979203" maxwidth="200" width="140" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+              <nodename>ship and Square</nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="337" posx="-89.229166666666742" posy="414.42960611979203" maxwidth="200" width="211" height="76" side="left" fold="true" treesize="76" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+                  <nodename>how do we group squares that are part of the same ship together</nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="295" posx="11.77083333333411" posy="490.42960611979208" maxwidth="200" width="110" height="40" side="left" fold="true" treesize="40" color="#68b723" layout="To left">
+                  <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename>start button</nodename>
                   <nodenote></nodenote>
                 </node>
               </nodes>
             </node>
           </nodes>
         </node>
-        <node id="74" posx="282.91393025716155" posy="749.27819115621378" maxwidth="200" width="110" height="42" side="right" fold="false" treesize="245" color="#f37329" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>?coordinate</nodename>
+        <node id="379" posx="421.77083333333371" posy="452.42960611979203" maxwidth="200" width="110" height="40" side="left" fold="true" treesize="40" color="#c6262e" layout="To left">
+          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
+          <nodename>Coordinates</nodename>
           <nodenote></nodenote>
           <nodes>
-            <node id="88" posx="492.91393025716161" posy="647.77819115621378" maxwidth="200" width="176" height="60" side="right" fold="false" treesize="60" color="#f37329" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>?create a coordinate function</nodename>
-              <nodenote></nodenote>
-              <nodes>
-                <node id="93" posx="768.91393025716138" posy="656.77819115621378" maxwidth="200" width="224" height="42" side="right" fold="false" treesize="42" color="#f37329" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>check out the notes here</nodename>
-                  <nodenote>function coordinate(x, y) {
-    this.x = x;
-    this.y = y;
+            <node id="125" posx="108.77083333333371" posy="452.42960611979203" maxwidth="200" width="213" height="40" side="left" fold="true" treesize="40" color="#c6262e" layout="To left">
+              <style linktype="curved" linkwidth="2" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="false" nodemargin="5" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename>createCoordinateObject</nodename>
+              <nodenote>function createCoordinate(letter, number){
+  this.x = x
+  this.y = y
 }
-
-var arr = [];
-arr.push(new coordinate(10, 0));
-arr.push(new coordinate(0, 11));</nodenote>
-                </node>
-              </nodes>
-            </node>
-            <node id="90" posx="492.91393025716161" posy="707.77819115621378" maxwidth="200" width="93" height="42" side="right" fold="false" treesize="42" color="#f37329" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>?create a</nodename>
-              <nodenote></nodenote>
-            </node>
-            <node id="99" posx="492.91393025716161" posy="800.27819115621378" maxwidth="200" width="171" height="42" side="right" fold="false" treesize="143" color="#f37329" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>?an array of objects</nodename>
-              <nodenote></nodenote>
-              <nodes>
-                <node id="100" posx="763.91393025716161" posy="749.77819115621378" maxwidth="200" width="164" height="60" side="right" fold="false" treesize="60" color="#f37329" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>{coordinates:(5,6), hit:false}</nodename>
-                  <nodenote></nodenote>
-                </node>
-                <node id="101" posx="763.91393025716138" posy="809.77819115621378" maxwidth="200" width="24" height="41" side="right" fold="false" treesize="41" color="#f37329" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename></nodename>
-                  <nodenote></nodenote>
-                </node>
-                <node id="102" posx="763.91393025716138" posy="850.77819115621378" maxwidth="200" width="126" height="42" side="right" fold="false" treesize="42" color="#f37329" layout="To right">
-                  <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-                  <nodename>let arr = new </nodename>
-                  <nodenote></nodenote>
-                </node>
-              </nodes>
+</nodenote>
             </node>
           </nodes>
         </node>
-        <node id="66" posx="282.91393025716155" posy="913.77819115621355" maxwidth="200" width="216" height="60" side="right" fold="false" treesize="102" color="#3689e6" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>hit(pos): coordinate[pos].hit = true</nodename>
-          <nodenote></nodenote>
-          <nodes>
-            <node id="97" posx="598.91393025716161" posy="892.77819115621355" maxwidth="200" width="221" height="60" side="right" fold="false" treesize="60" color="#3689e6" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>takes a number and then marks that position as 'hit'</nodename>
-              <nodenote></nodenote>
-            </node>
-            <node id="98" posx="598.91393025716161" posy="952.77819115621355" maxwidth="200" width="36" height="42" side="right" fold="false" treesize="42" color="#3689e6" layout="To right">
-              <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-              <nodename>?i</nodename>
-              <nodenote></nodenote>
-            </node>
-          </nodes>
-        </node>
-        <node id="67" posx="282.91393025716155" posy="994.77819115621378" maxwidth="200" width="134" height="42" side="right" fold="false" treesize="42" color="#7a36b1" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>isSunk:boolean</nodename>
-          <nodenote></nodenote>
-        </node>
       </nodes>
-    </node>
-    <node id="68" posx="127.91393025716093" posy="1157.7781911562133" maxwidth="200" width="70" height="42" side="left" fold="false" treesize="83.999999999999773" layout="To right">
-      <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-      <nodename>Player</nodename>
-      <nodenote></nodenote>
-      <nodes>
-        <node id="69" posx="297.91393025716155" posy="1136.7781911562133" maxwidth="200" width="120" height="42" side="right" fold="false" treesize="41.999999999999773" color="#715344" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>changeTurn()</nodename>
-          <nodenote></nodenote>
-        </node>
-        <node id="70" posx="297.91393025716155" posy="1178.7781911562133" maxwidth="200" width="141" height="42" side="right" fold="false" treesize="42" color="#333333" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>randomChoice()</nodename>
-          <nodenote></nodenote>
-        </node>
-      </nodes>
-    </node>
-    <node id="71" posx="127.91393025716093" posy="1320.7781911562138" maxwidth="200" width="110" height="42" side="left" fold="false" treesize="42" layout="To right">
-      <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-      <nodename>GameBoard</nodename>
-      <nodenote></nodenote>
-      <nodes>
-        <node id="72" posx="337.91393025716167" posy="1320.7781911562138" maxwidth="200" width="88" height="42" side="right" fold="false" treesize="42" color="#c6262e" layout="To right">
-          <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-          <nodename>randomk</nodename>
-          <nodenote></nodenote>
-        </node>
-      </nodes>
-    </node>
-    <node id="73" posx="127.91393025716093" posy="1462.7781911562133" maxwidth="200" width="48" height="42" side="left" fold="false" treesize="42" layout="To right">
-      <style linktype="curved" linkwidth="2" linkarrow="true" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="true" nodemargin="6" nodepadding="6" nodefont="Sans 11" nodemarkup="false"/>
-      <nodename>kkk</nodename>
-      <nodenote></nodenote>
     </node>
   </nodes>
-  <connections>
-    <connection from_id="50" to_id="30" drag_x="470.91393025716411" drag_y="-191.7218088437877" color="rgb(119,119,119)">
-      <style connectiondash="dotted" connectionwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10"/>
-      <title></title>
-      <note></note>
-    </connection>
-  </connections>
 </minder>
