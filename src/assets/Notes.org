@@ -182,8 +182,88 @@ let ship1 = {
 
 
 * Pseudocode
+- Player
+  - Properties
+    - turn
+      - Boolean
+      - tells if it is this Player's turn or not
+      - probably have to use the main loop to check
+    - fleet
+      - object
+      - each Player has their own Fleet
+      - used to check if Player has lost
+    - gameBoard
+      - object
+      - the Player's Gameboard on which the Fleet would be placed
+  - Functions
+- Fleet
+  - Properties
+    - sunk
+      - boolean
+      - have all the Ships sunk
+    - ships
+      - array
+      - all the Ship object's of the Player
+  - Functions
+    - createFleet(Player)
+      - returns a Fleet object of 5 ships, which would be passed to the Gameboard
+      - the coordinates of the Ships would be null until given coordinates
+- Ship
+  - Properties
+    - length
+      - used when placed Ship
+    - sunk
+      - boolean
+      - updates to true if all the squaresOfShip are hit
+      - squaresOfShip
+        - array
+        - all the Squares that the Ship is on
+        - used to check if Ship has been hit and if sunk
+  - Functions
+    - /markSquareHit(square)/
+      - marks the Square as hit
+    - isShipSunk()
+      - boolean
+      - if all the Squares in the squaresofShip have been hit
+- Gameboard
+  - Properties
+    - squares
+      - array
+      - all the Square object on the Gameboard are placed here
+    - /notShipAttack/
+      - array
+      - squares hit that are didn't have a ship
+      - we already would know if ths square is part of a ship and if it is hit
+  - Functions
+    - receiveAttack(Square)
+      - sets the Square hit to true
+    - passTurn()
+      - pass turn to next player
+    - /randomShipCoordinates()/
+      - retuns all the legal coordinates for Ships
+      - // instead though, just if Square isShipSquare, don't allow
+        - and we would just make the Ships not be vertical when creating so we don't have to make a function to block illegal moves
+- Square
+  - Properties
+    - coordinate
+      - object
+      - a coordinate object
+    - isShipSquare
+      - boolean
+      - is this part of a ship
+    - hit
+      - boolean
+      - changes when square hit
+  - Functions
+  - /updateSquareShip()/
+    - if a ship body is put here, the property is changed
+    - we clear the squareOfShip and put in these new Squares along with their coordinates
+- Coordinate
+  - Properties
+    - x: the letter
+    - y: the number
 
-** Queue
+* Queue
 - [X] research how to play battleship
-- [ ] top notes in modeling section
+- [X] top notes in modeling section
 - [ ]
