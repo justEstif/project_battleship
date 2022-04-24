@@ -1,0 +1,26 @@
+- Ship
+  - length: number
+  - sunk: boolean
+  - squaresOfShip: [] 
+  - addNewSquares([squares]): this.squaresOfShip
+  - isShipSunk(): this.sunk
+- Gameboard
+  - squares: []
+  - notShips: []: squares that are have no ships that were attacked
+  - receiveAttack(square)
+  - passTurn()
+- Player
+  - turn: boolean
+  - fleet: Fleet
+  - gameboard: GameBoard
+  - Function
+- Fleet
+  - sunk: boolean
+  - ships: [] 
+  - createFleet(Player)
+- Square
+  - x: string
+  - y: number
+  - ship:[shipID] || null
+  - hit: boolean
+
