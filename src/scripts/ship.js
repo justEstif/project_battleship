@@ -4,10 +4,6 @@ class Ship {
     this.sunk = false;
     this.squaresOfShip = [];
   }
-  markSquareHit(square) {
-    square.hit = true
-    return square
-  }
   addNewSquares(squares) {
     if (squares.length !== this.length) return;
     this.squaresOfShip = squares;
