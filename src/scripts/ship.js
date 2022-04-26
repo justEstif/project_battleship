@@ -9,11 +9,12 @@ class Ship {
     this.squaresOfShip = squares;
   }
   isShipSunk() {
-    this.sunk = true
-    this.squaresOfShip.map(square => {
-      if (!square.hit) this.sunk = false
-    })
-    return this.sunk
+    this.sunk = true;
+    this.squaresOfShip.map((square) => {
+      if (!square.hit) this.sunk = false;
+    });
+    // it would need to call isFleetSunk()
+    return this.sunk;
   }
 }
 const ShipFactory = {

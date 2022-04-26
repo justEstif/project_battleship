@@ -1,11 +1,5 @@
 # Project Battleship
-- Ship
-  - /id/: ships should have an id
-  - length: number
-  - sunk: boolean
-  - squaresOfShip: [] 
-  - addNewSquares([squares]): this.squaresOfShip
-  - isShipSunk(): this.sunk
+
 - Gameboard
   - squares: []
   - notShips: []: squares that are have no ships that were attacked
@@ -23,10 +17,18 @@
   - sunk: boolean
   - ships: [] 
   - createFleet(Player)
-- Square
+- Missing:
+  - a way to identify the ships a square is part of
+
+- Square: complete -> just an object with coordinates and ship and hit
   - x: string
   - y: number
   - ship:[shipID] || null
   - hit: boolean
-- Missing:
-  - a way to identify the ships a square is part of
+
+- Ship
+  - length: number
+  - sunk: boolean
+  - squaresOfShip: [] 
+  - addNewSquares([squares]): this.squaresOfShip 
+  - isShipSunk(): this.sunk

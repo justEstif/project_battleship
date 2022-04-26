@@ -1,7 +1,7 @@
 class Square {
   constructor() {
     this.coordinate = [];
-    this.ship = [];
+    this.ship = false;
     this.hit = false;
   }
 }
