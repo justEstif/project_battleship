@@ -3,6 +3,9 @@ class Gameboard {
     this.squares = []
     this.notShips = []
   }
+  passTurn() {
+    this.player.turn = false
+  }
 }
 
 const GameboardFactory = {

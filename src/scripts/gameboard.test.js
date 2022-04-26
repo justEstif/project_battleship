@@ -21,7 +21,6 @@ describe("testing the GameboardFactory", () => {
   })
    */
   it.todo("checking if passTurn would set Player.turn false, depending on whether player hit a ship or not");
-  it.todo("checking the receiveAttack function")
-  it.todo("checking the createSquares function")
+  it.todo("checking the receiveAttack function");
+  it.todo("checking the createSquares function");
 });
-

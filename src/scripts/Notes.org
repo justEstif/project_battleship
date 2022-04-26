@@ -38,16 +38,3 @@
 
 - 5 ships each player
 - 10 x 10 grid - 2 grid for each player
-* Ships factory
-#+begin_example
-let ship1 = {
-   length: 4,
-   hit(num){
-        // marks the postion as hit
-        count++
-   }
-   isSunk(){
-        if(hit.count >= lenth) ship = sunk
-   }
-}
-#+end_example
