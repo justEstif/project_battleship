@@ -1,4 +1,10 @@
-const { PlayerFactory, ShipFactory, FleetFactory, GameboardFactory } = require("./game.js");
+const {
+  PlayerFactory,
+  ShipFactory,
+  FleetFactory,
+  GameboardFactory,
+  SquareFactory
+} = require("./game.js");
 import { it, expect, describe, afterEach } from "@jest/globals";
 
 describe("testing the ShipFactory", () => {
@@ -54,39 +60,62 @@ describe("testing the ShipFactory", () => {
 });
 
 describe("testing the FleetFactory", () => {
-  let fleetObj = FleetFactory.makeFleet()
+  let fleetObj = FleetFactory.makeFleet();
   afterEach(() => {
-    fleetObj = FleetFactory.makeFleet()
-  })
+    fleetObj = FleetFactory.makeFleet();
+  });
   it("checking if the Fleet object is created with all the inital properties", () => {
     let expectedObj = {
       sunk: false,
-      ships: []
-    }
+      ships: [],
+    };
+    expect(fleetObj).toEqual(expectedObj);
+  });
+  it("check if addShip in Fleet works", () => {
+    let ship = ShipFactory.makeShip(4);
+    let expectedObj = {
+      sunk: false,
+      ships: [
+        {
+          length: 4,
+          sunk: false,
+          squaresOfShip: [],
+        },
+      ],
+    };
+    fleetObj.addShip(ship)
     expect(fleetObj).toEqual(expectedObj)
+  });
+  it("checking isFleetSunk work when ship is sunk", () => {
+    let ship = ShipFactory.makeShip(4);
+    ship.sunk = true
+    fleetObj.addShip(ship)
+    expect(fleetObj.isFleetSunk()).toBe(true)
   })
-  it.todo("check if isFleetSunk works")
-  it.todo("make sure that fleet has a createFleet method that creates 5 ships")
-})
+  it("checking isFleetSunk work when ship isn't sunk", () => {
+    let ship = ShipFactory.makeShip(4);
+    fleetObj.addShip(ship)
+    expect(fleetObj.isFleetSunk()).toBe(true)
+  })
+  it.todo("make sure that fleet has a createFleet method that creates 5 ships");
+});
 
-// TODO: import shipClass
 // TODO: test isFleetSunk()
 // TODO: test createFleet()
 
-
 describe("testing the PlayerFactory", () => {
-  let playerObj = PlayerFactory.makePlayer()
+  let playerObj = PlayerFactory.makePlayer();
   afterEach(() => {
-    playerObj = PlayerFactory.makePlayer()
-  })
+    playerObj = PlayerFactory.makePlayer();
+  });
   it("checking if the Player object has all the inital properties", () => {
     let expectedObj = {
       turn: false,
-    }
-    expect(playerObj).toEqual(expectedObj)
-  })
+    };
+    expect(playerObj).toEqual(expectedObj);
+  });
   it.todo("checking if the Player object has all the properties");
-  it.todo("check another function")
+  it.todo("check another function");
 });
 
 describe("testing the GameboardFactory", () => {

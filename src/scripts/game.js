@@ -2,22 +2,42 @@ class Player {
   constructor() {
     this.turn = false
   }
+  createFleet() { }
+  createGameBoard() { }
 }
-
 class Gameboard {
   constructor() {
     this.squares = []
     this.hitAndMiss = []
   }
 }
+class Square {
+  constructor() {
+    this.coordinate = [];
+    this.ship = false;
+    this.hit = false;
+  }
 
+}
 class Fleet {
   constructor() {
     this.sunk = false;
     this.ships = []
   }
+  addShip(ship) {
+    if (ship instanceof Ship) {
+      this.ships.push(ship)
+    }
+  }
+  isFleetSunk() {
+    this.sunk = true
+    this.ships.map((ship) => {
+      ship.isShipSunk()
+      if (!ship.sunk) this.sunk = false
+    })
+    return this.sunk
+  }
 }
-
 class Ship {
   constructor(length) {
     this.length = length;
@@ -38,14 +58,6 @@ class Ship {
   }
 }
 
-class Square {
-  constructor() {
-    this.coordinate = [];
-    this.ship = false;
-    this.hit = false;
-  }
-
-}
 const SquareFactory = {
   makeSquare: () => new Square(),
 };
