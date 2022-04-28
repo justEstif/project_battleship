@@ -1,34 +1,32 @@
 # Project Battleship
 
 - Gameboard
-  - squares: []
-  - notShips: []: squares that are have no ships that were attacked
-  - receiveAttack(square): 
-    - set square to hit 
-    - if the square has a ship pass square to ship using ID 
-    - else pass to notShips
-  - passTurn()
+  - [x] squares
+  - [x] hitAndMiss: [ ] // squares hit but ships miss
+  - [ ] receiveAttack(square)
+    - [x] set square.hit to true
+    - [ ] call isFleetSunk()
+  - [ ] passTurn()
 - Player
-  - turn: boolean
-  - fleet: Fleet
-  - gameboard: GameBoard
-  - Function
+  - [ ] turn: boolean
+  - [ ] fleet: Fleet{ }
+  - [ ] gameboard: Gameboard { }
 - Fleet
-  - sunk: boolean
-  - ships: [] 
-  - createFleet(Player)
-- Missing:
-  - a way to identify the ships a square is part of
-
-- Square: complete -> just an object with coordinates and ship and hit
-  - x: string
-  - y: number
-  - ship:[shipID] || null
-  - hit: boolean
-
+  - [x] sunk: boolean
+  - [x] ships: [ ]
+  - [ ] createFleet(Player)
+  - [ ] isFleetSunk
 - Ship
-  - length: number
-  - sunk: boolean
-  - squaresOfShip: [] 
-  - addNewSquares([squares]): this.squaresOfShip 
-  - isShipSunk(): this.sunk
+  - [ ] length: number
+  - [ ] sunk: boolean
+  - [ ] squaresOfShip: [ ]
+  - [ ] addNewSquares()
+  - [ ] isShipSunk()
+- Square
+  - [x] coordinates: [x, y]
+  - [x] isShip: boolean
+  - [x] hit: boolean
+  - [ ] setCoordinates() // seems unnecessary
+- Thoughts
+  - [ ] a game factory functions that creates and passes the objects
+- small steps

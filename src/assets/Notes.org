@@ -266,8 +266,3 @@ let ship1 = {
   - Properties
     - x: the letter
     - y: the number
-
-* Queue
-- [X] research how to play battleship
-- [X] top notes in modeling section
-- [ ]
