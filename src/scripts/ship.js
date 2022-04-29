@@ -3,6 +3,8 @@ class Ship {
     this.length = length
     this.sunk = false
     this.striked = []
+    this.coordinates = []
+
   }
   strike(number) {
     // this feels like an abstraction to be distilled out
@@ -18,5 +20,9 @@ class Ship {
     if (this.striked.length === this.length) this.sunk = true;
     return this.sunk;
   }
+  setCoordinate(coordinates) {
+    this.coordinates = coordinates
+  }
+
 }
 exports.Ship = Ship

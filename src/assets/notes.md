@@ -1,12 +1,11 @@
-strike(number){
-  switch(number){
-    case number <= length:
-    case number > 1:
-    case !striked.includes(number):
-      striked.push(number)
-      break
-  }
-  if(number <= length  and number > 1){
+coordinates: [
+  {1:null},
+  {2:null},
+  {3:null},
+  {4:null},
+  {5:null},
+]
 
-  }
-}
+check if any of the other ships are at that coordinate
+check if the coordinate array is of the length of the ship array
+set ship coordintaes
