@@ -21,7 +21,7 @@ class Ship {
     return this.sunk;
   }
   setCoordinate(coordinates) {
-    this.coordinates = coordinates
+    this.coordinates = coordinates;
   }
 
 }

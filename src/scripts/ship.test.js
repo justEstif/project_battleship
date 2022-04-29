@@ -21,6 +21,7 @@ describe("testing the ShipFactory", () => {
     };
     expect(ship).toEqual(expectedObj);
   });
+
   it("checking if the strike method of Ship works for valid values", () => {
     let ship = new Ship(5);
     ship.strike(6);
@@ -32,6 +33,7 @@ describe("testing the ShipFactory", () => {
     };
     expect(ship).toEqual(expectedObj);
   });
+
   it("checking if the isSunk method of Ship works for all hit", () => {
     let ship = new Ship(3);
     ship.strike(1);
