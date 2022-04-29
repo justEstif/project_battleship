@@ -15,4 +15,4 @@ ship -> take in length ->
 
 strike -> takes in number 
 the receiveAttack -> would check if the coordinate is one of the ships
-  > from within the ships gets the index -> adds one and passes it to the ship.strike 
+  > from within the ships gets the index -> adds one and passes it to the ship.strike  
