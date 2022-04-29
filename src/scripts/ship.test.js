@@ -2,30 +2,21 @@ const { Ship } = require("./ship.js");
 import { it, expect, describe, afterEach } from "@jest/globals";
 
 describe("testing the ShipFactory", () => {
-  it("checking the constructor of the Ship class", () => {
-    let ship = new Ship(5);
-    let expectedObj = {
-      length: 5,
-      sunk: false,
-      striked: [],
-    };
-    expect(ship).toEqual(expectedObj);
-  });
-  it("checking the constructor of the Ship class", () => {
-    let ship = new Ship(4);
-    let expectedObj = {
-      length: 4,
-      sunk: false,
-      striked: [],
-    };
-    expect(ship).toEqual(expectedObj);
-  });
+
+  it("checking the strike method of Ship", () => {
+    let ship = new Ship(2)
+    ship.strike(1)
+    let expected = [1]
+    expect(ship.striked).toEqual(expected)
+  })
+
   it("checking if the strike method of Ship works for valid values", () => {
     let ship = new Ship(4);
     ship.strike(1);
     let expectedObj = {
       length: 4,
       sunk: false,
+      coordinates: [],
       striked: [1],
     };
     expect(ship).toEqual(expectedObj);
@@ -36,6 +27,7 @@ describe("testing the ShipFactory", () => {
     let expectedObj = {
       length: 5,
       sunk: false,
+      coordinates: [],
       striked: [],
     };
     expect(ship).toEqual(expectedObj);
