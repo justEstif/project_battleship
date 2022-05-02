@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build src --emptyOutDir",
+    "build": "vite build src --emptyOutDir --watch",
     "preview": "vite preview",
     "test": "jest",
     "watch": "jest --watch --verbose"
