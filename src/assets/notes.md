@@ -1,18 +1,29 @@
-coordinates: [
-  {1:null},
-  {2:null},
-  {3:null},
-  {4:null},
-  {5:null},
-]
+- [ ] Ship
 
-check if any of the other ships are at that coordinate
-check if the coordinate array is of the length of the ship array
-set ship coordintaes
+- [ ] length: default 3
 
+  - [ ] hits
+  - [ ] sunk
+  - [ ] locations
+  - [ ] hit(guess)
+  - [ ] isSunk()
 
-ship -> take in length -> 
+- [ ] Fleet
 
-strike -> takes in number 
-the receiveAttack -> would check if the coordinate is one of the ships
-  > from within the ships gets the index -> adds one and passes it to the ship.strike  
+  - [ ] shipAmount
+  - [ ] fleetSunk
+
+- [ ] Gameboard
+
+  - [ ] receiveAttack()
+  - [ ] isGameover()
+  - [ ] randomizeFleet()
+
+- [ ] Player
+
+  - [ ] turn
+  - [ ] randomMoves()
+
+- [ ] view
+  - [ ] create players and gameboard
+    - [ ] place ships
