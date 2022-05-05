@@ -1,6 +1,17 @@
 class Ship {
-  // properties
-  // functions
+  /**
+     Ship object
+     {
+     length,
+     sunk,
+     locations:{
+     [location{x,y}, hit],
+     [location{x,y}, hit],
+     [location{x,y}, hit],
+     }
+
+     }
+   */
   constructor(length = 3) {
     this.length = length;
     this.sunk = false;

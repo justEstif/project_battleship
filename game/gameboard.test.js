@@ -16,7 +16,7 @@ describe("checking the gameboar", () => {
     expect(gameboard).toEqual(expected);
   });
 
-  it.only("setLocation()", () => {
+  it("setLocation()", () => {
     let gameboard = GameboardFactory.makeGameboard();
     let ship = ShipFactory.makeShip();
     let newLocations = [
@@ -29,7 +29,7 @@ describe("checking the gameboar", () => {
     expect(gameboard.ships[0]).toEqual(ship);
   });
 
-  it.only("setLocation() fail not the right length", () => {
+  it("setLocation() fail not the right length", () => {
     let gameboard = GameboardFactory.makeGameboard();
     let ship = ShipFactory.makeShip();
     let newLocations = [
@@ -42,7 +42,7 @@ describe("checking the gameboar", () => {
     gameboard.setLocation(0, newLocations);
     expect(gameboard.ships[0]).not.toEqual(ship);
   });
-  it.only("setLocation() fail not the right length", () => {
+  it("setLocation() fail not the right length", () => {
     let gameboard = GameboardFactory.makeGameboard();
     let ship = ShipFactory.makeShip();
     let newLocations = [
@@ -54,7 +54,7 @@ describe("checking the gameboar", () => {
     gameboard.setLocation(0, newLocations);
     expect(gameboard.ships[0]).not.toEqual(ship);
   });
-  it.only("setLocation() fail not horizontal or vertical", () => {
+  it("setLocation() fail not horizontal or vertical", () => {
     let gameboard = GameboardFactory.makeGameboard();
     let ship = ShipFactory.makeShip();
     let newLocations = [
@@ -65,7 +65,7 @@ describe("checking the gameboar", () => {
     gameboard.setLocation(0, newLocations);
     expect(gameboard.ships[0]).not.toEqual(ship);
   });
-  it.only("setLocation() fail already in use", () => {
+  it("setLocation() fail already in use", () => {
     let gameboard = GameboardFactory.makeGameboard();
     let ship = ShipFactory.makeShip();
     let newLocations = [

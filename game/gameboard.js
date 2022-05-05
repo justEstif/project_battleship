@@ -44,11 +44,13 @@ class Gameboard {
     if (xs.some((x) => x != xs[0]) || ys.some((y) => y != ys[0])) return false;
 
     // NOTE if the locations have not been taken by any other ship
-    this.ships.map(ship => {
-      ship.locations.map(location => {
-        if (newLocations.includes(location)) return
-      })
-    })
+    for (const ship of this.ships) {
+      for (const location of ship.locations) {
+        for (const newLocation of newLocations) {
+          if (location === newLocation) return false
+        }
+      }
+    }
     // else
     if (newLocations) return true;
   }
