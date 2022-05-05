@@ -8,13 +8,15 @@ describe("checking the gameboar", () => {
     let ship = ShipFactory.makeShip();
     let expected = {
       miss: [],
+      boardSize: 7,
       shipAmount: 3,
       shipsSunk: 0,
       ships: [ship, ship, ship],
     };
     expect(gameboard).toEqual(expected);
   });
-  it("setLocation()", () => {
+
+  it.only("setLocation()", () => {
     let gameboard = GameboardFactory.makeGameboard();
     let ship = ShipFactory.makeShip();
     let newLocations = [
@@ -25,6 +27,56 @@ describe("checking the gameboar", () => {
     ship.setLocation(newLocations);
     gameboard.setLocation(0, newLocations);
     expect(gameboard.ships[0]).toEqual(ship);
+  });
+
+  it.only("setLocation() fail not the right length", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
+    expect(gameboard.ships[0]).not.toEqual(ship);
+  });
+  it.only("setLocation() fail not the right length", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 14, y: 1 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
+    expect(gameboard.ships[0]).not.toEqual(ship);
+  });
+  it.only("setLocation() fail not horizontal or vertical", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 2, y: 1 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
+    expect(gameboard.ships[0]).not.toEqual(ship);
+  });
+  it.only("setLocation() fail already in use", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
+    gameboard.setLocation(1, newLocations);
+    expect(gameboard.ships[1]).not.toEqual(ship);
   });
   it("receiveAttack", () => {
     let gameboard = GameboardFactory.makeGameboard();
@@ -81,14 +133,5 @@ describe("checking the gameboar", () => {
   // TODO setLocation will not horizontal or vertical location
   // TODO setLocation with too long or too short location
   // TODO isFleetDown when true and false
-  it("isFleetDown", () => {
-    let gameboard = GameboardFactory.makeGameboard();
-    gameboard.ships[0].sunk = true;
-    gameboard.ships[1].sunk = true;
-    gameboard.ships[2].sunk = true;
-
-    expect(gameboard.isFleetDown()).toBe(true);
-  });
-
   // checkGameStatus will check if the game is over, if it is still my turn or if I pass turn
 });
