@@ -7,47 +7,65 @@ describe("checking the ship", () => {
     let expected = {
       length: 3,
       sunk: false,
-      locations: ["", "", ""],
-      hits: ["", "", ""]
+      locations: [
+        { location: {}, hit: false },
+        { location: {}, hit: false },
+        { location: {}, hit: false },
+      ],
     }
     expect(ship).toEqual(expected)
   })
   it("setLocation test", () => {
-    // check if the new locations are horizontal or vertical
-    // check if the new location isn't one of the ships
-    // j
     let ship = ShipFactory.makeShip()
-    let newLocation = ["01, 11, 21"]
-    ship.setLocation(newLocation)
-    expect(ship.locations).toEqual(newLocation)
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ]
+    ship.setLocation(newLocations)
+    expect(ship.locations).toEqual(newLocations)
   })
-  it('hit test', () => {
+  it("hit() test", () => {
     let ship = ShipFactory.makeShip()
-    let newLocation = ["01", "11", "21"]
-    ship.setLocation(newLocation)
-    ship.hit("11")
-    expect(ship.hits).toEqual(["", "hit", ""])
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ]
+    let expected = [
+      { location: { x: 0, y: 0 }, hit: true },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ]
+    ship.setLocation(newLocations)
+    ship.hit({ x: 0, y: 0 })
+    expect(ship.locations).toEqual(expected)
   })
   it("isShipSunk test", () => {
 
     let ship = ShipFactory.makeShip()
-    let newLocation = ["01", "11", "21"]
-    ship.setLocation(newLocation)
-    ship.hit("21")
-    ship.hit("11")
-    ship.hit("01")
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ]
+    ship.setLocation(newLocations)
+    ship.hit({ x: 0, y: 0 })
+    ship.hit({ x: 0, y: 1 })
+    ship.hit({ x: 0, y: 2 })
     expect(ship.sunk).toBe(true)
   })
   it("isShipSunk test", () => {
     let ship = ShipFactory.makeShip()
-    let newLocation = ["01", "11", "21"]
-    ship.setLocation(newLocation)
-    ship.hit("22")
-    ship.hit("11")
-    ship.hit("01")
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ]
+    ship.setLocation(newLocations)
+    ship.hit({ y: 0, x: 0 })
+    ship.hit({ y: 0, x: 1 })
+    ship.hit({ y: 0, x: 2 })
     expect(ship.sunk).toBe(false)
   })
-
 })
-
-// TODO setLocation logic should be in the Gameboard so that it is compared with the other Ships the the player has

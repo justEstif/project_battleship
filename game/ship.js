@@ -4,34 +4,37 @@ class Ship {
   constructor(length = 3) {
     this.length = length;
     this.sunk = false;
-    this.locations = this.setInital().locations;
-    this.hits = this.setInital().hits;
+    this.locations = this.setInital();
   }
   setInital() {
-    let initalValues = { locations: [], hits: [] };
-    for (let i = 0; i < this.length; i++) {
-      initalValues.hits.push("");
-      initalValues.locations.push("");
-    }
-    return initalValues;
+    let initalValue = [];
+    for (let i = 0; i < this.length; i++)
+      initalValue.push({ location: {}, hit: false });
+    return initalValue;
   }
-  setLocation(locations) {
-    this.locations = locations;
+  setLocation(newLocations) {
+    // NOTE the logic will be placed in the Gameboard
+    // it will compare the attempt with the other ships before passing to ship
+    this.locations = newLocations;
   }
-  hit(guess) {
-    this.locations.map((location, index) => {
-      if (location === guess && this.hits[index] !== "hit") {
-        this.hits[index] = "hit";
+  hit(target) {
+    for (let coordinate of this.locations) {
+      if (
+        coordinate.location.x === target.x &&
+        coordinate.location.y === target.y &&
+        !coordinate.hit // NOTE do I need this?
+      ) {
+        coordinate.hit = true;
         this.isShipSunk();
+        return;
       }
-    });
+    }
   }
   isShipSunk() {
-    for (const hit of this.hits) {
-      if (!hit) { return this.sunk }
+    for (let coordinate of this.locations) {
+      if (!coordinate.hit) return (this.sunk = false);
     }
-    this.sunk = true
-    return this.sunk
+    return (this.sunk = true);
   }
 }
 
@@ -40,15 +43,3 @@ const ShipFactory = {
 };
 
 exports.ShipFactory = ShipFactory;
-/**
- * create a ship
- * the ship should have a certain length
- * the default length should be 3
- * the locations and hits would be arrays of the squares
- * hit(guess)
- * * if guess is hit ->
- * * * if not hit -> set hit -> isShipSunk()
- * * * if hit -> do nothing -> keep turn ??
- * * else -> report miss
- *
- * */

@@ -3,7 +3,7 @@ class Gameboard {
   constructor(shipAmount = 3) {
     this.miss = [];
     this.shipAmount = shipAmount;
-    this.shipSunk = 0;
+    this.shipsSunk = 0;
     this.ships = this.createShips();
   }
   createShips() {
@@ -13,34 +13,33 @@ class Gameboard {
     }
     return shipAmount;
   }
-  validChange(newLocations) {
-    // TODO add proper logic
+  validChange(index, newLocations) {
+    // TODO can add logic if required
+    // check if any of the locations are in ships.[i].loctaionso
+    // check if the locations are horizontal or vertical
+    // check if the length is fine
+    // check if the value is valid -> all the locations exist
+    // check if the locations have not been taken by any other ship
+    // pass the value
     if (newLocations) return true;
   }
   setLocation(index, newLocations) {
-    // TODO can add logic if required
-    // some type of validation maybe
-    if (this.validChange(newLocations)) {
-      this.ships[index].locations = newLocations;
-    }
-  }
-  checkGameStatus() {
-    if (this.shipSunk === this.shipAmount) {
-      // TODO gameover logic
-    }
-    else {
-      // TODO something
+    if (this.validChange(index, newLocations)) {
+      this.ships[index].setLocation(newLocations)
     }
   }
   receiveAttack(guess) {
+    // TODO decouple this function
     // check if in ships
     this.ships.map(ship => {
       ship.locations.map(location => {
         if (location === guess) {
           ship.hit(guess);
           if (ship.isShipSunk()) {
-            this.shipSunk++;
-            this.checkGameStatus();
+            this.shipsSunk++;
+            this.isFleetDown()
+            // TODO some game logic -> checkShips
+            // NOTE end game || keep turn || pass turn
           }
           return
         }
@@ -51,9 +50,7 @@ class Gameboard {
     })
     this.miss.push(guess)
   }
-
 }
-
 
 const GameboardFactory = {
   makeGameboard: () => new Gameboard(),

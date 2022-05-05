@@ -1,28 +1,42 @@
 class Ship {
-  constructor(length) {
-    this.length = length
-    this.sunk = false
-    this.striked = []
-    this.coordinates = []
-
+  // properties
+  // functions
+  constructor(length = 3) {
+    this.length = length;
+    this.sunk = false;
+    this.locations = this.setInital().locations;
+    this.hits = this.setInital().hits;
   }
-  strike(number) {
-    // this feels like an abstraction to be distilled out
-    if (number <= this.length
-      && number >= 1
-      && !this.striked.includes(number)
-    ) {
-      this.striked.push(number);
-      this.isSunk()
+  setInital() {
+    let initalValues = { locations: [], hits: [] };
+    for (let i = 0; i < this.length; i++) {
+      initalValues.hits.push("");
+      initalValues.locations.push("");
     }
+    return initalValues;
   }
-  isSunk() {
-    if (this.striked.length === this.length) this.sunk = true;
-    return this.sunk;
+  setLocation(locations) {
+    this.locations = locations;
   }
-  setCoordinate(coordinates) {
-    this.coordinates = coordinates;
+  hit(guess) {
+    this.locations.map((location, index) => {
+      if (location === guess && this.hits[index] !== "hit") {
+        this.hits[index] = "hit";
+        this.isShipSunk();
+      }
+    });
   }
-
+  isShipSunk() {
+    for (const hit of this.hits) {
+      if (!hit) { return this.sunk }
+    }
+    this.sunk = true
+    return this.sunk
+  }
 }
-exports.Ship = Ship
+
+const ShipFactory = {
+  makeShip: (length) => new Ship(length),
+};
+
+exports.ShipFactory = ShipFactory;

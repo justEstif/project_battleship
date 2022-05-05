@@ -1,59 +1,94 @@
 const { GameboardFactory } = require("./gameboard.js");
 const { ShipFactory } = require("./ship.js");
-import { it, expect, describe, afterEach } from "@jest/globals";
+import { it, expect, describe } from "@jest/globals";
 
-describe("checking the ship", () => {
-  it("inital properties", () => {
-    let gameboard = GameboardFactory.makeGameboard()
-    let ship = ShipFactory.makeShip()
+describe("checking the gameboar", () => {
+  it("GameboardFactory.makeGameboard() -> createShips() logic", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
     let expected = {
       miss: [],
       shipAmount: 3,
-      shipSunk: 0,
-      ships: [ship, ship, ship]
-    }
-    expect(gameboard).toEqual(expected)
-  })
-  it("setLocation", () => {
-    let gameboard = GameboardFactory.makeGameboard()
-    let newLocations = ["04", "14", "24"]
-    let ship = ShipFactory.makeShip()
-    ship.locations = newLocations
-    gameboard.setLocation(0, newLocations)
-
-    expect(gameboard.ships[0]).toEqual(ship)
-  })
+      shipsSunk: 0,
+      ships: [ship, ship, ship],
+    };
+    expect(gameboard).toEqual(expected);
+  });
+  it("setLocation()", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
+    expect(gameboard.ships[0]).toEqual(ship);
+  });
   it("receiveAttack", () => {
-    let gameboard = GameboardFactory.makeGameboard()
-    let newLocations = ["04", "14", "24"]
-    gameboard.setLocation(0, newLocations)
-    gameboard.receiveAttack("04")
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
 
-    expect(gameboard.ships[0].hits).toEqual(["hit", "", ""])
-  })
-  it("receiveAttack", () => {
-    let gameboard = GameboardFactory.makeGameboard()
-    let newLocations = ["04", "14", "24"]
-    gameboard.setLocation(0, newLocations)
-    gameboard.receiveAttack("14")
-    expect(gameboard.ships[0].hits).toEqual(["", "hit", ""])
-  })
-  it("receiveAttack missed", () => {
-    let gameboard = GameboardFactory.makeGameboard()
-    let newLocations = ["04", "14", "24"]
-    gameboard.setLocation(0, newLocations)
-    gameboard.receiveAttack("23")
-    expect(gameboard.miss).toEqual(['23'])
-  })
-  it('checkShips', () => {
-    let gameboard = GameboardFactory.makeGameboard()
-    gameboard.ships[0].sunk = true
-    gameboard.ships[1].sunk = true
-    gameboard.ships[2].sunk = true
+    let newLocations = [
+      { location: { x: 0, y: 0 }, hit: false },
+      { location: { x: 0, y: 1 }, hit: false },
+      { location: { x: 0, y: 2 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
 
-    expect(gameboard.checkShips()).toBe(true)
-  })
+    ship.hit({ x: 0, y: 0 })
+    gameboard.receiveAttack({ x: 0, y: 0 })
+    expect(gameboard.ships[0].locations).toEqual(ship.locations)
+
+  });
+
+  it("receiveAttack miss", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
+
+    let newLocations = [
+      { location: { x: 0, y: 4 }, hit: false },
+      { location: { x: 1, y: 4 }, hit: false },
+      { location: { x: 2, y: 4 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
+
+    ship.hit({ x: 1, y: 3 })
+    gameboard.receiveAttack({ x: 1, y: 3 })
+    expect(gameboard.ships[0].locations).toEqual(ship.locations)
+  });
+
+  it("receiveAttack miss", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    let ship = ShipFactory.makeShip();
+
+    let newLocations = [
+      { location: { x: 0, y: 4 }, hit: false },
+      { location: { x: 1, y: 4 }, hit: false },
+      { location: { x: 2, y: 4 }, hit: false },
+    ];
+    ship.setLocation(newLocations);
+    gameboard.setLocation(0, newLocations);
+
+    ship.hit({ x: 1, y: 3 })
+    gameboard.receiveAttack({ x: 1, y: 3 })
+    expect(gameboard.miss[0]).toEqual({ x: 1, y: 3 })
+  });
+  // TODO setLocation will already used locations
+  // TODO setLocation will not horizontal or vertical location
+  // TODO setLocation with too long or too short location
+  // TODO isFleetDown when true and false
+  it("isFleetDown", () => {
+    let gameboard = GameboardFactory.makeGameboard();
+    gameboard.ships[0].sunk = true;
+    gameboard.ships[1].sunk = true;
+    gameboard.ships[2].sunk = true;
+
+    expect(gameboard.isFleetDown()).toBe(true);
+  });
 
   // checkGameStatus will check if the game is over, if it is still my turn or if I pass turn
-
-})
+});
