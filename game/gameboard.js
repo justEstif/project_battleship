@@ -62,6 +62,7 @@ class Gameboard {
           ship.hit(guess);
           if (ship.isShipSunk()) {
             this.shipsSunk++;
+            this.checkShips()
             // TODO some game logic -> checkShips
             // NOTE end game || keep turn || pass turn
           }
@@ -73,6 +74,10 @@ class Gameboard {
       if (miss === guess) return;
     });
     this.miss.push(guess);
+  }
+
+  checkShips() {
+    return (this.shipsSunk >= this.shipAmount)
   }
 }
 
